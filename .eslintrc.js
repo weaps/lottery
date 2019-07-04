@@ -779,7 +779,7 @@ module.exports = {
     'prefer-numeric-literals': 0,
 
     // promise 的 reject 中必须传入 Error 对象，而不允许使用字面量
-    'prefer-promise-reject-errors': 2,
+    'prefer-promise-reject-errors': 0,
 
     // 必须使用解构 ...args 来代替 arguments
     'prefer-rest-params': 2,

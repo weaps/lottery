@@ -344,7 +344,7 @@ module.exports = {
 
     // 禁止空的 function
     // 包含注释的情况下允许
-    'no-empty-function': 2,
+    'no-empty-function': 0,
 
     // 禁止解构中出现空 {} 或 []
     'no-empty-pattern': 2,
@@ -419,7 +419,7 @@ module.exports = {
     'no-invalid-this': 0,
 
     // 禁止使用不规范空格
-    'no-irregular-whitespace': [2, {
+    'no-irregular-whitespace': [0, {
       'skipStrings': true, // 允许在字符串中使用
       'skipComments': true, // 允许在注释中使用
       'skipRegExps': true, // 允许在正则表达式中使用
@@ -615,7 +615,7 @@ module.exports = {
     'no-throw-literal': 2,
 
     // 禁止行尾空格
-    'no-trailing-spaces': [2, {
+    'no-trailing-spaces': [0, {
       "skipBlankLines": true, // 不检查空行
       "ignoreComments": true // 不检查注释
     }],
@@ -710,7 +710,7 @@ module.exports = {
     'no-void': 2,
 
     // 禁止注释中出现 TODO 或 FIXME，用这个来提醒开发者，写了 TODO 就一定要做完
-    'no-warning-comments': 1,
+    'no-warning-comments': 0,
 
     // 禁止属性前出现空格，如 foo. bar()
     'no-whitespace-before-property': 2,
@@ -742,7 +742,7 @@ module.exports = {
     'one-var-declaration-per-line': 0,
 
     // 是否允许使用逗号一次声明多个变量
-    'one-var': [2, {
+    'one-var': [0, {
       'const': 'never' // 所有 const 声明必须独占一行，不允许用逗号定义多个
     }],
 
@@ -827,7 +827,7 @@ module.exports = {
     'semi-style': [2, 'last'],
 
     // 行尾必须使用分号结束
-    'semi': 2,
+    'semi': 0,
 
     // imports 必须排好序
     // @off 没必要限制
@@ -863,7 +863,7 @@ module.exports = {
     }],
 
     // 注释的斜线和星号后要加空格
-    'spaced-comment': [2, 'always', {
+    'spaced-comment': [0, 'always', {
       'block': {
         exceptions: ['*'],
         balanced: true

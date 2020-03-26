@@ -27,6 +27,7 @@ class Timer {
       if (r.length || m > 0) {
         r.push(`<em>${m}</em>分`)
       }
+
       if (r.length || s > 0) {
         r.push(`<em>${s}</em>秒`)
       }

@@ -11,11 +11,15 @@ class Calculate {
     }
     return count
   }
+  // 计算金额 （用户要支付给系统的钱）
+  computeBonus (active, play_name) {
 
+  }
   static combine(arr, size) {
     let allResult = []
     // eslint-disable-next-line no-shadow,no-unexpected-multiline
     (function f(arr, size, result) {
+
       let arrLen = arr.length
       if (size > arrLen) {
         return

@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div v-for="(item, index) of 6" :key="index" class="my-scroll-bar">
+    <div v-for="(item, index) of 42" :key="index" class="my-scroll-bar">
       <ul>
         <li v-for="(item, i) of 100" v-bind:key="i">{{i}}</li>
       </ul>
@@ -20,7 +20,13 @@ export default {
     Array.from(dom).forEach(el => {
       this.arr.push(new Vue.$geminiScrollbar({
         element: el,
-        autoshow: true
+        autoshow: true,
+        onReady: () => {
+          console.log('onResize')
+        },
+        ready() {
+          console.log('ready')
+        }
       }).create())
     })
   },
@@ -54,13 +60,16 @@ export default {
 </script>
 <style scoped>
 .container {
-  display: flex;
+  width: 100%;
+  font-size: 0;
 }
 .my-scroll-bar {
-  flex: 1;
+  display: inline-block;
+  max-width: 25%;
   border: 1px solid #ddeedd;
   height: 200px;
   margin: 0 20px;
+  font-size: 14px;
 }
 .gm-scrollbar.-vertical {
   background-color: #f0f0f0

@@ -25,6 +25,11 @@ export default new Router({
       path: '/test',
       name: 'test',
       component: () => import('./views/scroll.vue')
+    },
+    {
+      path: '/select',
+      name: 'select',
+      component: () => import('./views/select.vue')
     }
   ]
 })

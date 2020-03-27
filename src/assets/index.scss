@@ -1,6 +1,65 @@
 .gm-scrollbar-container .gm-scroll-view {
-  // width: 100% !important;
-  // height: 44px !important;
   overflow-x: hidden;
   padding-bottom: 15px;
+  box-sizing: border-box;
+}
+.text-ellipsis {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.more-container {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  min-height: 200px;
+  // border-radius: 4px;
+  box-sizing: border-box;
+  border: 1px solid #ebeef5;
+  background: #F2F8FE;
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,.1);
+  z-index: 11;
+  &.top {
+    top: 0;
+  }
+  &.bottom {
+    bottom: 0;
+  }
+  .more-container-ul {
+    height: 140px;
+    padding: 0;
+    .more-container-item {
+      position: relative;
+      padding: 8px 35px 8px 10px;
+      text-align: left;
+      border-top: 1px solid rgba(50, 50, 50, .1);
+      &:hover {
+        background: #fff;
+      }
+      .options {
+        position: absolute;
+        right: 6px;
+        top: 50%;
+        transform: translateY(-50%);
+        i {
+          cursor: pointer;
+          & + i {
+            margin-left: 5px;
+          }
+        }
+        .del {
+          &:hover {
+            color: #f56c6c;
+          }
+        }
+        .edit {
+          &:hover {
+            color: #409EFF;
+            
+          }
+        }
+      }
+    }
+  }
 }

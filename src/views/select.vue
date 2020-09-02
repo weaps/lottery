@@ -2,8 +2,10 @@
   <div class="select">
     <div class="inner"
          v-clickOut="test">
-      <div class="inputWrapper"
-           @click="showOptions = !showOptions">
+      <div
+        @click="showOptions = !showOptions"
+        class="inputWrapper"
+      >
         <input type="text"
                readonly
                placeholder="请选择菜品"
@@ -52,15 +54,8 @@ export default {
         this.$emit('selected', name)
       }
     },
-    outsideDirec() {
-      this.showOptions = false
-    },
     test() {
-      debugger
       this.showOptions = false
-    },
-    example2() {
-      return 'xxx'
     }
   },
   directives: {
@@ -111,6 +106,9 @@ li {
       padding-left: 10px;
       border: none;
       cursor: pointer;
+      &:focus {
+        outline: 0;
+      }
     }
   }
   > .options {

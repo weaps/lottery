@@ -3,3 +3,4 @@
 [0326/144834.162:ERROR:process_reader_win.cc(123)] NtOpenThread: {无法访问} 过程已请求访问一对象，但未给访问权限。 (0xc0000022)
 [0326/145158.302:ERROR:process_reader_win.cc(123)] NtOpenThread: {无法访问} 过程已请求访问一对象，但未给访问权限。 (0xc0000022)
 [0326/152343.334:ERROR:process_reader_win.cc(123)] NtOpenThread: {无法访问} 过程已请求访问一对象，但未给访问权限。 (0xc0000022)
+[0617/161526.811:ERROR:process_reader_win.cc(123)] NtOpenThread: {无法访问} 过程已请求访问一对象，但未给访问权限。 (0xc0000022)

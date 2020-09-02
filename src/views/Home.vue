@@ -48,8 +48,7 @@
           <p>{{new Date(day).getDate()}}</p>
           <ol class="task-list" ref="wrapper">
             <li
-              v-for="
-                (item, i) of calendarTaskObj[day.getFullYear()] &&
+              v-for="(item, i) of calendarTaskObj[day.getFullYear()] &&
                 calendarTaskObj[day.getFullYear()][day.getMonth()] &&
                 calendarTaskObj[day.getFullYear()][day.getMonth()][day.getDate()]
               "
@@ -217,7 +216,7 @@ export default {
           innerHeight = window.innerHeight
       this.directionStyle = innerHeight - clientY > 300 ? 'top' : 'bottom'
       // more-container-ul
-      
+
       this.$nextTick(() => {
         let s = new Vue.$geminiScrollbar({
           element: document.querySelector('.more-container-ul'),
@@ -246,7 +245,7 @@ export default {
     isShowMoreTask(day) {
       let data = this.returnCalendarTaskData(day)
       console.log(data);
-      
+
     },
     returnCalendarTaskData(day) {
       let arr = []
@@ -387,7 +386,7 @@ export default {
           }
         }
       }
-      
+
       .task-list {
         position: relative;
         max-height: 58px;
